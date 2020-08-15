@@ -1,0 +1,117 @@
+#header {
+    background-color: var(--color-primary);
+    height: 90vh;
+    border-bottom-left-radius: 15rem;
+    position: relative;
+    z-index: 2;
+}
+
+.header__text {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.header__text h1 {
+    font-family: 'Questrial', sans-serif;
+    color: var(--color-font-head);
+    font-weight: 400;
+    letter-spacing: 1rem;
+    font-size: 12.5rem;
+}
+
+.header__text p {
+    font-size: 3rem;
+    letter-spacing: 1.5rem;
+    color: var(--color-font);
+    font-weight: 500;
+    position: relative;
+    left: 23%;
+}
+
+.header__img img {
+    position: absolute;
+    height: 80%;
+    top: 33%;
+    right: 5%;
+}
+
+.header__search {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    background-color: var(--color-secondary);
+    padding: 2rem;
+    border-radius: 10rem;
+    position: absolute;
+    top: 140%;
+    left: 35%;
+    transition: all .2s;
+}
+
+.header__search:hover {
+    color: var(--color-secondary);
+    background-color: #000;
+}
+
+
+@media only screen and (max-width: 62.5em) {
+    #header {
+        height: 95vh;
+    }
+
+    .header__text {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header__img img {
+        height: 60%;
+        top: 50%;
+        right: 30%;
+        transform: translateX(50%);
+    }
+
+    .header__search {
+        top: 160%;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .header__search {
+        padding: 3rem;
+    }
+}
+
+@media only screen and (max-width: 34.375em) {
+    .header__img img {
+        height: 50%;
+        top: 70%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .header__search {
+        top: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+@media only screen and (max-width: 30em) {
+    .header__text {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}

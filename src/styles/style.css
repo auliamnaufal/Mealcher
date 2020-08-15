@@ -1,0 +1,68 @@
+:root {
+    --color-primary: #87DFD6;
+    --color-secondary: #FFFFDD;
+    --color-tertiary: #FCFCC5;
+
+    --color-font-head: #092B2E;
+    --color-font-tag: #3A7175;
+    --color-font-placeholder: #7D7D7D;
+    --color-font-find: #A3A316;
+}
+
+@import "./about.css";
+@import "./header.css";
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    /* padding: 3rem; */
+    font-family: 'Quicksand', sans-serif;
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media only screen and (max-width: 34.375em) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media only screen and (max-width: 21.875em) {
+    html {
+        font-size: 25%;
+    }
+}
